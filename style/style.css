@@ -1,0 +1,151 @@
+@import 'font.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair';
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 25px 0;
+}
+
+.header__nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  gap: 40px;
+}
+
+.header__link {
+  color: #000;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header__form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 212px;
+  height: 28px;
+  width: 100%;
+}
+
+.header__form input {
+  border: 1px solid #41A28E;
+  outline: none;
+  padding: 6px 12px;
+  width: 180px;
+}
+
+.header__form button {
+  width: 28px;
+  border: none;
+  background: #41A28E;
+}
+
+.header__li {
+  position: relative;
+}
+
+.header__dropdown {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 160px;
+  border-radius: 2px;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+}
+
+.header__li:hover .header__dropdown{
+  z-index: 1;
+  opacity: 1;
+}
+
+
+.header__dropdown-link {
+  color: #000;
+  font-size: 12px;
+  padding: 12px 30px;
+  display: flex;
+  background: #FFF;
+}
+.header__dropdown-li{
+  border: 1px solid #E5E5E5;
+}
+.header__dropdown-li:nth-child(2){
+  border-top: none;
+  border-bottom: none;
+}
+
+
+
+.intro {
+  background: url('../img/intro.svg')no-repeat center / cover;
+  height: 90vh;
+}
+
+.intro .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.intro__title {
+  background: rgba(0, 0, 0, 0.70);
+  padding: 17px 61px;
+  color: #FFF;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.intro__text {
+  color: #FFF;
+  text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.38);
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.intro__btn {
+  padding: 22px 35px;
+}
+
+.btn {
+  background: #FFF;
+  color: #000;
+  font-size: 12px;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #41A28E;
+  color: #FFF;
+}
